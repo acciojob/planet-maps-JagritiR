@@ -1,16 +1,19 @@
-<!DOCTYPE html>
-
 <html>
-
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <title>Image Map Example</title>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <h1>Image Map Example</h1>
+  <p>Click on the planets to learn more about them.</p>
+  <img src="planets.jpg" alt="Planets" usemap="#planetmap" width="400" height="300">
+  <map name="planetmap">
+    <area shape="rect" coords="0,0,100,300" href="sun.htm" alt="Sun">
+    <area shape="circle" coords="150,150,25" href="mercury.htm" alt="Mercury">
+    <area shape="circle" coords="200,150,35" href="venus.htm" alt="Venus">
+    <area shape="circle" coords="250,150,40" href="earth.htm" alt="Earth">
+    <area shape="circle" coords="300,150,30" href="mars.htm" alt="Mars">
+    <area shape="circle" coords="350,150,50" href="jupiter.htm" alt="Jupiter">
+    <area shape="circle" coords="400,150,45" href="saturn.htm" alt="Saturn">
+  </map>
 </body>
-
 </html>
