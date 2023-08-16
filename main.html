@@ -3,17 +3,48 @@
   <title>Image Map Example</title>
 </head>
 <body>
-  <h1>Image Map Example</h1>
-  <p>Click on the planets to learn more about them.</p>
-  <img src="planets.jpg" alt="Planets" usemap="#planetmap" width="400" height="300">
-  <map name="planetmap">
-    <area shape="rect" coords="0,0,100,300" href="sun.htm" alt="Sun">
-    <area shape="circle" coords="150,150,25" href="mercury.htm" alt="Mercury">
-    <area shape="circle" coords="200,150,35" href="venus.htm" alt="Venus">
-    <area shape="circle" coords="250,150,40" href="earth.htm" alt="Earth">
-    <area shape="circle" coords="300,150,30" href="mars.htm" alt="Mars">
-    <area shape="circle" coords="350,150,50" href="jupiter.htm" alt="Jupiter">
-    <area shape="circle" coords="400,150,45" href="saturn.htm" alt="Saturn">
-  </map>
+ <!-- Use the image of the solar system from the first web search result [^1^][5] -->
+<img src="https://img.freepik.com/premium-vector/solar-system-science-education_1308-92618.jpg?w=2000" alt="Solar System" usemap="#planetmap" width="800" height="600">
+
+<!-- Use the map tag to define the image map -->
+<map name="planetmap">
+  <!-- Use the area tag to define the clickable areas for each planet and the sun -->
+  <!-- Use the circle shape and coords for the planets -->
+  <!-- Use the rect shape and coords for the sun -->
+  <!-- Use the href attribute to link to the respective planet's page -->
+  <!-- Use the alt attribute to provide a text alternative for each area -->
+
+  <!-- Sun -->
+  <area shape="rect" coords="0,0,100,100" href="sun.htm" alt="Sun">
+
+  <!-- Mercury -->
+  <area shape="circle" coords="150,300,10" href="mercury.htm" alt="Mercury">
+
+  <!-- Venus -->
+  <area shape="circle" coords="200,300,15" href="venus.htm" alt="Venus">
+
+  <!-- Earth -->
+  <area shape="circle" coords="250,300,20" href="earth.htm" alt="Earth">
+
+  <!-- Mars -->
+  <area shape="circle" coords="300,300,15" href="mars.htm" alt="Mars">
+
+  <!-- Jupiter -->
+  <area shape="circle" coords="400,300,40" href="jupiter.htm" alt="Jupiter">
+
+  <!-- Saturn -->
+  <area shape="circle" coords="500,300,35" href="saturn.htm" alt="Saturn">
+
+  <!-- Uranus -->
+  <area shape="circle" coords="600,300,25" href="uranus.htm" alt="Uranus">
+
+  <!-- Neptune -->
+  <area shape="circle" coords="700,300,25" href="neptune.htm" alt="Neptune">
+
+  <!-- Pluto -->
+  <area shape="circle" coords="750,300,10" href="pluto.htm" alt="Pluto">
+
+</map>
+
 </body>
 </html>
